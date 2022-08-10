@@ -17,15 +17,15 @@ function change() {
     <button @click="a+=1">响应式: +</button>
     <button @click="change()">函数方法: -</button>
 
-    <text>
-      import { ref } from 'vue'
+<!--    <text>-->
+<!--      import { ref } from 'vue'-->
 
-      const a = ref(100);
+<!--      const a = ref(100);-->
 
-      function change() {
-      a.value-=1;
-      }
-    </text>
+<!--      function change() {-->
+<!--      a.value-=1;-->
+<!--      }-->
+<!--    </text>-->
 
   </div>
 </template>
