@@ -1,26 +1,26 @@
 <script setup>
   import {reactive} from 'vue'
-  const obj1 = reactive({id: 0, name:'请输入名字'})
-  const obj2 = reactive([
+  const obj = reactive({id: 0, name:'请输入名字'})
+  const list = reactive([
     // {id: 1, name: 'itlove1'},
     // {id: 2, name: 'itlove2'},
     // {id: 3, name: 'itlove3'},
   ])
 
   function action() {
-    let maxID = obj2.length > 0 ? Math.max(...obj2.map(v=>v.id)) +1 : 1
-    obj2.push({id:maxID, name: obj1.name})
+    let maxID = list.length > 0 ? Math.max(...list.map(v=>v.id)) +1 : 1
+    list.push({id:maxID, name: obj.name})
   }
 </script>
 
 <template>
   <div class="comm">
     <div class="title">05-reactive函数</div>
-    <input type="text" v-model="obj1.name"/>
+    <input type="text" v-model="obj.name"/>
     <button @click="action">输入玩家</button>
-<!--    <div class="name"> {{obj1.name}}</div>-->
+<!--    <div class="name"> {{obj.name}}</div>-->
 
-    <div class="name" v-for="v in obj2" :key="v.id">玩家: {{v.name}}___ID: {{v.id}}</div>
+    <div class="name" v-for="v in list" :key="v.id">玩家: {{v.name}}___ID: {{v.id}}</div>
 
   </div>
 </template>
