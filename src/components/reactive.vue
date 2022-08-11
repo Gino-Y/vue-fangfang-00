@@ -18,7 +18,8 @@ function action() {
 <template>
   <div class="comm">
     <div class="title">05-reactive函数</div>
-    <FileName fileName="reactive.vue"/>
+    <file-name fileName="reactive.vue"/>
+
     <input type="text" v-model="obj.name"/><!--v-model-->
     <button @click="action">输入玩家</button>
 <!--    <div class="name"> {{obj.name}}</div>-->
@@ -40,8 +41,8 @@ function action() {
 }
 .comm{
   background: rgba(68, 63, 63, 0.67);
-  height: 200px;
   width: 200px;
+  height: 260px;
 }
 input{
   margin-left: 5px;

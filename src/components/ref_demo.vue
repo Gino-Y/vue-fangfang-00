@@ -26,7 +26,7 @@ let obj = reactive({id:100})
 }
 .comm{
   background: rgba(68, 63, 63, 1);
-  height: 200px;
   width: 200px;
+  height: 260px;
 }
 </style>

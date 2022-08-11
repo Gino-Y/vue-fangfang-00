@@ -38,8 +38,8 @@ function change() {
 }
 .comm{
   background: rgba(58, 53, 53, 0.67);
-  height: 200px;
   width: 200px;
+  height: 260px;
 }
 button{
   /*float: left;*/

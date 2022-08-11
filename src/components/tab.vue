@@ -34,8 +34,8 @@ const num = ref(1)
 
 .comm{
   background: rgb(68, 65, 66);
-  height: 200px;
   width: 200px;
+  height: 260px;
 }
 button{
   float: left;

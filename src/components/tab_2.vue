@@ -40,8 +40,8 @@ function action(i) {
 
 .comm{
   background: rgb(89, 86, 87);
-  height: 200px;
   width: 200px;
+  height: 260px;
 }
 button{
   float: left;

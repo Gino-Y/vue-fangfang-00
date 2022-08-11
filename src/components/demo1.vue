@@ -14,8 +14,10 @@ function add() {
 <template>
   <div class="comm">
     <div class="title">04-setup语法糖</div>
-    <file-name name="demo1.vue"/>
+    <file-name fileName="demo1.vue"/>
+
     <button @click="add">添加标签</button>
+
     <div class="label" v-for="(v, i) in arr" :key="v.id">{{v.title}}{{i+1}}</div>
   </div>
 </template>
@@ -46,7 +48,7 @@ button{
 }
 .comm{
   background: rgba(44, 40, 40, 0.67);
-  height: 200px;
   width: 200px;
+  height: 260px;
 }
 </style>
