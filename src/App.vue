@@ -6,6 +6,7 @@ import Tab from './components/tab.vue'
 import Tab_2 from './components/tab_2.vue'
 import Demo1 from './components/demo1.vue'
 import Reactive from './components/reactive.vue'
+import Ref_demo from './components/ref_demo.vue'
 
 </script>
 
@@ -16,6 +17,7 @@ import Reactive from './components/reactive.vue'
     <Tab_2 class="float"/>
     <Demo1 class="float"/>
     <Reactive class="float"/>
+    <Ref_demo class="float"/>
   </div>
 </template>
 

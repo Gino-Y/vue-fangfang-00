@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import FileName from './elements/fileName.vue'
 
 const a = ref(100);
 
@@ -11,6 +12,7 @@ function change() {
 <template>
   <div class="comm">
     <div class="title">01-响应式与函数方法</div>
+    <file-name fileName="ref.vue"/>
 
     <div class="num">{{a}}</div>
 
@@ -26,7 +28,6 @@ function change() {
 <!--      a.value-=1;-->
 <!--      }-->
 <!--    </text>-->
-
   </div>
 </template>
 

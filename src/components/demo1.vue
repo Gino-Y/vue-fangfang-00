@@ -1,18 +1,20 @@
 <script setup>
 import {ref} from 'vue'
+import FileName from './elements/fileName.vue'
 
-  const arr = ref([])
+const arr = ref([])
 
-  function add() {
-    arr.value.push({title:'标题', id:arr.value.length+1})
-    console.log(arr.value)
-  }
+function add() {
+  arr.value.push({title:'标题', id:arr.value.length+1})
+  console.log(arr.value)
+}
 
 </script>
 
 <template>
   <div class="comm">
     <div class="title">04-setup语法糖</div>
+    <file-name name="demo1.vue"/>
     <button @click="add">添加标签</button>
     <div class="label" v-for="(v, i) in arr" :key="v.id">{{v.title}}{{i+1}}</div>
   </div>

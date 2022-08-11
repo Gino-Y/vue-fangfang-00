@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import FileName from './elements/fileName.vue'
 
 const num = ref(1)
 </script>
@@ -7,6 +8,8 @@ const num = ref(1)
 <template>
   <div class="comm">
     <div class="title">04-setup语法糖</div>
+    <FileName fileName="tab.vue"/>
+
 
     <div class="num">{{num}}</div>
 

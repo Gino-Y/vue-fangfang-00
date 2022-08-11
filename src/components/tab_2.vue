@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import FileName from './elements/fileName.vue'
 
 const num = ref(0)
 const items = ref([
@@ -16,6 +17,7 @@ function action(i) {
 <template>
   <div class="comm">
     <div class="title">04-setup语法糖</div>
+    <FileName fileName="tab_2.vue"/>
 
     <div class="num">{{num}}</div>
 
