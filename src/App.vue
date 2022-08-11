@@ -9,6 +9,7 @@ import Reactive from './components/reactive.vue'
 import Ref_demo from './components/ref_demo.vue'
 import Ref_demo_reactive from "./components/ref_reactive.vue";
 import Ref_demo_dom from "./components/ref_dom.vue";
+import Computed from "./components/computed.vue";
 
 </script>
 
@@ -22,6 +23,7 @@ import Ref_demo_dom from "./components/ref_dom.vue";
     <Ref_demo_dom class="float"/>
     <Ref_demo class="float"/>
     <Ref_demo_reactive class="float"/>
+    <computed class="float"/>
   </div>
 </template>
 
