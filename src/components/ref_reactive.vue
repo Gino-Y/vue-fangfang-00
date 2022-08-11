@@ -5,20 +5,20 @@ import FileName from './elements/fileName.vue'
 let num = ref(100)
 let obj = reactive({num:100})
 
-const itens = ref([//===================>
+const itens = reactive([//===================>
   // {num:100},
   // {num:8},
 ])
 function sum() {
   let n = num.value + obj.num
-  itens.value.push({num: n})//===================>
+  itens.push({num: n})//===================>
 }
 </script>
 
 <template>
   <div class="comm">
-    <div class="title">06-ref函数</div>
-    <FileName fileName="ref_demo.vue"/>
+    <div class="title">06-ref函数_对比reactive</div>
+    <FileName fileName="ref_reactive.vue"/>
 
     <div class="num">{{num}}</div>
     <div class="num">{{obj.num}}</div>
@@ -66,7 +66,7 @@ input{
   background-color: #394042;
 }
 .comm{
-  background: rgba(68, 63, 63, 1);
+  background: rgba(68, 63, 63, 0.67);
   width: 200px;
   height: 260px;
 }
