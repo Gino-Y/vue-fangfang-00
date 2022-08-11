@@ -1,5 +1,5 @@
 <script setup>
-import {ref, reactive} from 'vue';
+import {ref} from 'vue';
 import FileName from './elements/fileName.vue'
 
 let domChange = ref()
