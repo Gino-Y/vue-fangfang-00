@@ -18,16 +18,18 @@ const cate = reactive([
   {title: '龙虾', check: false, price:500},
 ])
 
-// const slectednum = computed(()=>items.filter(v=>v.check).length)
-
-// const slectednum = computed(()=>{
+// const selected = computed(()=>items.filter(v=>v.check).length)
+// const selected = computed(()=>{
 //   return function (arr) {
 //     return arr.filter(v=>v.check).length
 //   }
 // })
 
-const slectednum = computed(()=>arr=>{
-    return arr.filter(v=>v.check).length
+const selected = computed(()=>arr=>{
+  let slectedarr = arr.filter(v=>v.check) //被选中的数组
+  let titleNum = slectedarr.length //被选中的数组的个数
+  let priceAll = slectedarr.reduce((total,cur)=>total+cur.price,0); //计算出数组的和
+  return [titleNum, priceAll]
 })
 
 </script>
@@ -37,19 +39,21 @@ const slectednum = computed(()=>arr=>{
     <div class="title">07-computed计算属性</div>
     <file-name fileName="computed.vue"/>
 
-    <div class="text">按了{{slectednum(items)}}/{{items.length}}个项目</div>
-    <div class="text">吃了{{slectednum(cate)}}/{{cate.length}}种美食</div>
-    <div class="text">本会所共消费_元</div>
+    <div class="text">按了{{selected(items)[0]}}/{{items.length}}个项目 共{{selected(items)[1]}}</div>
+    <div class="text">吃了{{selected(cate)[0]}}/{{cate.length}}种美食 共{{selected(cate)[1]}}</div>
+    <div class="text">本会所共消费{{selected(items)[1]+selected(cate)[1]}}元</div>
 
     <div class="items">
       <div class="items" v-for="(v, i) in items" key="i">
-        <input type="checkbox" v-model="v.check">{{v.title}}
+        <input type="checkbox" v-model="v.check">
+        {{v.title}}{{v.price}}
       </div>
     </div>
 
     <div class="items">
       <div class="items" v-for="(v, i) in cate" key="i">
-        <input type="checkbox" v-model="v.check">{{v.title}}
+        <input type="checkbox" v-model="v.check">
+        {{v.title}}{{v.price}}
       </div>
     </div>
 

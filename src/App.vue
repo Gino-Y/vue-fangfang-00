@@ -10,6 +10,7 @@ import Ref_demo from './components/ref_demo.vue'
 import Ref_demo_reactive from "./components/ref_reactive.vue";
 import Ref_demo_dom from "./components/ref_dom.vue";
 import Computed from "./components/computed.vue";
+import Computed_02 from "./components/computed_02.vue";
 
 </script>
 
@@ -23,6 +24,7 @@ import Computed from "./components/computed.vue";
     <Ref_demo_dom class="float"/>
     <Ref_demo class="float"/>
     <Ref_demo_reactive class="float"/>
+    <computed_02 class="float"/>
     <computed class="float"/>
   </div>
 </template>
