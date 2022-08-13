@@ -130,10 +130,10 @@ const tagNum = computed(()=>10 - myTag.value.length);
 .panel-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 10px;
+  font-size: 15px;
   color: inherit;
-  //font-weight: 500;
-  height: 10px;
+//font-weight: 500;
+  height: 14px;
 }
 .panel-height {
   //height: 83px;
