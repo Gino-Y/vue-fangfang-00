@@ -153,7 +153,7 @@ const tagNum = computed(()=>10 - myTag.value.length);
 }
 .panel-height li span.del{
   position:absolute;
-  color:#999;
+  color:black;
   right:3px;
   top:-3px;
 }
