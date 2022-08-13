@@ -11,6 +11,8 @@ import Ref_demo_reactive from "./components/ref_reactive.vue";
 import Ref_demo_dom from "./components/ref_dom.vue";
 import Computed from "./components/computed.vue";
 import Computed_02 from "./components/computed_02.vue";
+import Init from "./components/init.vue";
+import Tag from "./components/tag.vue";
 
 </script>
 
@@ -26,6 +28,8 @@ import Computed_02 from "./components/computed_02.vue";
     <Ref_demo_reactive class="float"/>
     <computed_02 class="float"/>
     <computed class="float"/>
+    <tag class="float"/>
+    <init class="float"/>
   </div>
 </template>
 
