@@ -13,6 +13,7 @@ import Computed from "./components/computed.vue";
 import Computed_02 from "./components/computed_02.vue";
 import Init from "./components/init.vue";
 import Tag from "./components/tag.vue";
+import Shuttle from './components/shuttle.vue'
 
 </script>
 
@@ -29,6 +30,7 @@ import Tag from "./components/tag.vue";
     <computed_02 class="float"/>
     <computed class="float"/>
     <tag class="float"/>
+    <Shuttle class="float"/>
     <init class="float"/>
   </div>
 </template>

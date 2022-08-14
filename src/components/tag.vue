@@ -1,6 +1,7 @@
 <script setup>
 import {ref, reactive, computed} from "vue";
 import FileName from './elements/fileName.vue'
+import { NTag } from 'naive-ui'
 const tagData = reactive([
   {name:'生活',id:1,flag:false},
   {name:'游戏',id:2,flag:false},
@@ -58,6 +59,9 @@ const tagNum = computed(()=>10 - myTag.value.length);
 
 <template>
   <div class="comm">
+<!--    <n-tag class="title" style="width: 400px; height:20px" :bordered="false">-->
+<!--      08-标签多项选择框-->
+<!--    </n-tag>-->
     <div class="title">08-标签多项选择框</div>
     <file-name style="width: 400px" fileName="tag.vue"/>
 
@@ -110,7 +114,7 @@ const tagNum = computed(()=>10 - myTag.value.length);
   height: 260px;
 }
 .panel {
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   background-color: #fff;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -132,7 +136,7 @@ const tagNum = computed(()=>10 - myTag.value.length);
   margin-bottom: 0;
   font-size: 15px;
   color: inherit;
-//font-weight: 500;
+  //font-weight: 500;
   height: 14px;
 }
 .panel-height {
@@ -144,7 +148,7 @@ const tagNum = computed(()=>10 - myTag.value.length);
   background: #f9f9f9;
   display: inline-block;
   border: 1px solid #d6e9c6;
-  margin: 2px;
+  margin: 1px;
   padding: 2px 5px;
   position:relative;
 }
