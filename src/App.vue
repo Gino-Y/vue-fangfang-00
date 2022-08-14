@@ -14,6 +14,7 @@ import Computed_02 from "./components/computed_02.vue";
 import Init from "./components/init.vue";
 import Tag from "./components/tag.vue";
 import Shuttle from './components/shuttle.vue'
+import Watch from "./components/watch.vue";
 
 </script>
 
@@ -31,6 +32,7 @@ import Shuttle from './components/shuttle.vue'
     <computed class="float"/>
     <tag class="float"/>
     <Shuttle class="float"/>
+    <watch class="float"/>
     <init class="float"/>
   </div>
 </template>
