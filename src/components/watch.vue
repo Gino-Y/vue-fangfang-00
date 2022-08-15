@@ -15,7 +15,7 @@ const stop = watch(num, (newValue, oldValue)=>{
 function change() {
   num.value += 1
   if(num.value >= 8){
-    odevity.value='不在监听'
+    odevity.value='不再监听'
     stop()
   }
 }
