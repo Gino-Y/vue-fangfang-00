@@ -48,8 +48,8 @@ function zero() {
   background-color: #394042;
 }
 .comm{
-  background: rgba(68, 63, 63, 0.67);
-  /*background: rgba(68, 63, 63, 1);*/
+  /*background: rgba(68, 63, 63, 0.67);*/
+  background: rgba(68, 63, 63, 1);
   width: 200px;
   height: 260px;
 }

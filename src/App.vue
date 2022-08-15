@@ -17,6 +17,7 @@ import Shuttle from './components/shuttle.vue'
 import Watch from "./components/watch.vue";
 import Watch_02 from "./components/watch_02.vue";
 import Hook from "./components/hook.vue";
+import Slideshow from "./components/slideshow.vue";
 
 </script>
 
@@ -37,6 +38,7 @@ import Hook from "./components/hook.vue";
     <watch class="float"/>
     <watch_02 class="float"/>
     <hook class="float"/>
+    <slideshow class="float"/>
     <init class="float"/>
   </div>
 </template>
