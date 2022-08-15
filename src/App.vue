@@ -49,8 +49,8 @@ import DefineProps from "./components/defineProps.vue";
 .bg {
   margin:0 auto;
   background-color: #7a7a7a;
-  width: 600px;
-  height: 2000px;
+  width: 800px;
+  height: 3000px;
 }
 .float {
   float: left;

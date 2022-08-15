@@ -28,9 +28,10 @@ const value = ref(createValues())
     <n-transfer
         ref="transfer"
         v-model:value="value"
-        virtual-scroll=True
+        virtual-scroll
         :options="options"
-        filterable=true
+        filterable
+        style="height: 215px"
     />
 
   </div>
@@ -43,7 +44,7 @@ const value = ref(createValues())
 }
 .comm{
   background: rgba(68, 63, 63, 0.67);
-//background: rgba(68, 63, 63, 1);
+/*background: rgba(68, 63, 63, 1);*/
   width: 400px;
   height: 260px;
 }

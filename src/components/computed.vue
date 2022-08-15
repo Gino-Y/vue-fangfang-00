@@ -4,10 +4,10 @@ import FileName from './elements/fileName.vue'
 
 const items = reactive([
   {title: '指压', check: false, price:298},
-  {title: '中式', check: false, price:498},
-  {title: '泰式', check: false, price:698},
-  {title: '柔式', check: false, price:898},
-  {title: '水疗', check: false, price:998},
+  {title: '柔式', check: false, price:498},
+  {title: '水疗', check: false, price:698},
+  {title: '胸推', check: false, price:898},
+  {title: '口爆', check: false, price:998},
 ])
 
 const cate = reactive([
