@@ -1,14 +1,19 @@
 <script setup>
-const {a} = defineProps({
-  a:{
+const {num, color, action} = defineProps({
+  num:{
     type:Number,
     default:()=>0
-  }
+  },
+  color:{
+    type:String,
+    default:()=>'black'
+  },
+  action:Function
 })
 
 </script>
 <template >
-  <div class="num">{{a}}</div>
+  <div class="num" :style="{color:color}" @click="action">{{num}}</div>
 </template>
 
 

@@ -18,6 +18,7 @@ import Watch from "./components/watch.vue";
 import Watch_02 from "./components/watch_02.vue";
 import Hook from "./components/hook.vue";
 import Slideshow from "./components/slideshow.vue";
+import DefineProps from "./components/defineProps.vue";
 
 </script>
 
@@ -34,11 +35,12 @@ import Slideshow from "./components/slideshow.vue";
     <computed_02 class="float"/>
     <computed class="float"/>
     <tag class="float"/>
-<!--    <Shuttle class="float"/>-->
+    <Shuttle class="float"/>
     <watch class="float"/>
     <watch_02 class="float"/>
     <hook class="float"/>
     <slideshow class="float"/>
+    <define-props class="float"/>
     <init class="float"/>
   </div>
 </template>
