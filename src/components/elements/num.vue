@@ -10,7 +10,6 @@ const {num, color, action} = defineProps({
   },
   action:Function
 })
-
 </script>
 <template >
   <div class="num" :style="{color:color}" @click="action">{{num}}</div>

@@ -19,6 +19,7 @@ import Watch_02 from "./components/watch_02.vue";
 import Hook from "./components/hook.vue";
 import Slideshow from "./components/slideshow.vue";
 import DefineProps from "./components/defineProps.vue";
+import Emits from "./components/emits.vue";
 
 </script>
 
@@ -41,6 +42,7 @@ import DefineProps from "./components/defineProps.vue";
     <hook class="float"/>
     <slideshow class="float"/>
     <define-props class="float"/>
+    <emits class="float"/>
     <init class="float"/>
   </div>
 </template>

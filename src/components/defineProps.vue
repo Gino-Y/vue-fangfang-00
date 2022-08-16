@@ -10,7 +10,7 @@ function add(){
 
 <template>
   <div class="comm">
-    <div class="title">13-使用组件及传参</div>
+    <div class="title">13-使用组件及传参_父->子</div>
     <file-name fileName="defineProps.vue"/>
     <num :num=num :action="add" :color="'red'"/>
   </div>
