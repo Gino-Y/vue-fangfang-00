@@ -17,7 +17,7 @@ function myclick(v) { // 接收子的行为 v就是子传过来的数据
     <div class="title">14-使用组件及传参_子->父</div>
     <file-name fileName="emission.vue"/>
 
-    <emits_sub @click="myclick"/>
+    <emits_sub @subClick="myclick"/>
     <n-tag style="height: 100px" size="large">父组件展示的: {{msg}}</n-tag>
 
   </div>
