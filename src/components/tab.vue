@@ -1,14 +1,46 @@
 <script setup>
+import {NButton, NDrawer, NDrawerContent, NCode} from 'naive-ui'
 import { ref } from 'vue'
 import FileName from './elements/fileName.vue'
 
 const num = ref(1)
+
+const active = ref(false);
+const placement = ref("right");
+const activate = (place) => {
+  active.value = true;
+  placement.value = place;
+};
+const code = `
+<script setup>
+
+const num = ref(1)
+
+<//script>
+
+
+<template>
+    <div class="num">{{num}}</div>
+
+    <div>
+      <button :class="{active:num===1}" @click="num = 1">新闻</button>
+      <button :class="{active:num===2}" @click="num = 2">热点</button>
+    </div>
+
+    <div class="tab-con">
+      <div v-show="num===1">新闻内容</div>
+      <div v-show="num===2">热点资讯</div>
+    </div>
+</template>
+
+`
+
 </script>
 
 <template>
   <div class="comm">
     <div class="title">04-setup语法糖</div>
-    <FileName fileName="tab.vue"/>
+    <FileName fileName="tab.vue" @click="activate('bottom')"/>
 
 
     <div class="num">{{num}}</div>
@@ -22,6 +54,16 @@ const num = ref(1)
       <div v-show="num===1">新闻内容</div>
       <div v-show="num===2">热点资讯</div>
     </div>
+
+    <n-drawer v-model:show="active" :default-height="800" :placement="placement">
+      <n-drawer-content title="tab.vue">
+
+        <div style="overflow: auto">
+          <n-code :code="code" language="javascript" show-line-numbers word-wrap/>
+        </div>
+
+      </n-drawer-content>
+    </n-drawer>
 
   </div>
 </template>

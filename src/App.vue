@@ -1,6 +1,4 @@
 <script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import Ref from './components/ref.vue'
 import Tab from './components/tab.vue'
 import Tab_2 from './components/tab_2.vue'
@@ -19,29 +17,35 @@ import Watch_02 from "./components/watch_02.vue";
 import Hook from "./components/hook.vue";
 import Slideshow from "./components/slideshow.vue";
 import DefineProps from "./components/defineProps.vue";
+import Emits from "./components/emits.vue";
+import Component from "./components/compoentTest.vue";
+import Axios_test from "./components/axios_test.vue";
 
 </script>
 
 <template>
   <div class="bg">
-    <ref class="float"/>
-    <Tab class="float"/>
-    <Tab_2 class="float"/>
-    <Demo1 class="float"/>
-    <Reactive class="float"/>
-    <Ref_demo_dom class="float"/>
-    <Ref_demo class="float"/>
-    <Ref_demo_reactive class="float"/>
-    <computed_02 class="float"/>
-    <computed class="float"/>
-    <tag class="float"/>
-    <Shuttle class="float"/>
-    <watch class="float"/>
-    <watch_02 class="float"/>
-    <hook class="float"/>
-    <slideshow class="float"/>
-    <define-props class="float"/>
-    <init class="float"/>
+    <ref  class="float" />
+    <Tab  class="float" />
+    <Tab_2  class="float" />
+    <Demo1  class="float" />
+    <Reactive class="float" />
+    <Ref_demo_dom class="float" />
+    <Ref_demo class="float" />
+    <Ref_demo_reactive class="float" />
+    <computed_02 class="float" />
+    <computed class="float" />
+    <tag class="float" />
+    <Shuttle class="float" />
+    <watch class="float" />
+    <watch_02 class="float" />
+    <hook class="float" />
+    <slideshow class="float" />
+    <define-props class="float" />
+    <emits class="float" />
+    <component class="float" />
+    <axios_test class="float" />
+    <init class="float" />
   </div>
 </template>
 

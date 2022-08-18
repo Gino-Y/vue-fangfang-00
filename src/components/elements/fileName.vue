@@ -9,7 +9,7 @@ const {fileName} = defineProps({
 
 <template>
   <div class="box">
-    <div class="text">组件名: {{ fileName }}</div>
+    <div class="text" >Code: {{ fileName }}</div>
   </div>
 </template>
 
@@ -27,6 +27,7 @@ const {fileName} = defineProps({
   color: rgba(185, 180, 176, 0.5);
   background-color: rgba(185, 52, 52, 0.2);
   text-align: end;
+  user-select:none;
 }
 
 </style>
